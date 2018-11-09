@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/profile_friend_item_subscribe_bg_normal"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/profile_friend_item_subscribe_bg_normal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/all_toutiaologo_new"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_btn_bg_white">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/ic_drawer_search_normal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textSize="13sp"
+                android:hint="搜你想要搜的"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            style="@style/CustomTabLayout"
+            android:id="@+id/tl_tabLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:tabMode="fixed"
+            app:tabMinWidth="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/detail_more_cancel_btn_bg_pressed"
+            app:tabSelectedTextColor="@android:color/holo_red_light"
+            app:tabTextColor="@android:color/black">
+        </android.support.design.widget.TabLayout>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="24sp"
+            android:background="@color/detail_more_cancel_btn_bg_pressed"
+            android:gravity="center"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

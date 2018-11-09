@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableListView">
+        <attr name="android:groupIndicator" />
+        <attr name="android:childDivider" />
+        <attr name="android:indicatorStart" />
+        <attr name="android:indicatorEnd" />
+        <attr name="android:indicatorLeft" />
+        <attr name="android:indicatorRight" />
+        <attr name="android:childIndicator" />
+        <attr name="android:childIndicatorStart" />
+        <attr name="android:childIndicatorEnd" />
+        <attr name="android:childIndicatorLeft" />
+        <attr name="android:childIndicatorRight" />
+    </declare-styleable>
+
+</resources>

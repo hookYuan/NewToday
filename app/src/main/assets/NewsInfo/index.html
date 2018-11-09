@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font.css">
+		<script type="text/javascript">
+	
+//			function duihua()
+//				{	
+//					temp=document.getElementsByName("img");
+////					temp=document.getElementById("img_content");
+//					alert(temp.src);
+//					javascript:JSInterface.openActivity(temp.src);
+//				}
+			
+			function AddImgClickEvent(){  
+           		var objs = document.getElementsByTagName("img");
+           		var data = new Array();
+           		for(var i=0;i<objs.length;i++){  
+           			data[i] = objs[i].getAttributeNode("src").nodeValue;
+                	objs[i].onclick=function(){  	
+                   	 	alert("您点击的是"+this.getAttributeNode("src").nodeValue);
+                   	 	javascript:JSInterface.openActivity(data);
+                	}  
+          	 	} 
+        	} 
+        	
+		</script>
+	</head>
+
+	<body onload="AddImgClickEvent()">
+		
+		<h3>陈乔恩凌晨发长文吊念乔任梁引起泪奔 网友：乔恩不哭！</h3>
+		<div class="title3">
+			<img id="img_head" src="img/img_head.jpg" />
+			<div class="title2">
+				<p id="title">娱乐拔了吧</p>
+				<p id="time">09-23 05:59</p>
+			</div>
+			<button onclick="AddImgClickEvent()">关注</button>
+		</div>
+		</br>
+		</br>
+		</br>
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+		<img id="img_content" src="img/img_head.jpg" onclick="duihua()">
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+		<img id="img_content" src="img/img_head.jpg" onclick="duihua()">
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击.几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+		<img id="img_content" src="img/img_head.jpg" onclick="duihua()">
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+		<img id="img_content" src="img/img_head.jpg" onclick="duihua()"> 
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击.几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+		<img id="img_content" src="img/img_head.jpg" onclick="duihua()">
+		<p id="content">这几天乔任梁的死在娱乐圈闹得是沸沸扬扬，作为好友的陈乔恩因没有发微博公开悼念引来网友的语言攻击</p>
+	</body>
+
+</html>

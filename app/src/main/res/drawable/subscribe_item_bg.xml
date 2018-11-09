@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--能接受触摸或点击事件的被点击选中时-->
+    <item android:state_enabled="true" android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/subscribe_item_drag_bg" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!--长按选中的中的时候-->
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:width="1.0dip" android:color="@color/subscribe_item_selected_stroke" />
+            <solid android:color="@color/subscribe_item_selected_bg" />
+        </shape>
+    </item>
+    <!--不能接受触摸点击事件的-->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/subscribe_item_disabled_bg" />
+        </shape>
+    </item>
+    <!--当按下的时候-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/subscribe_item_pressed_bg" />
+        </shape>
+    </item>
+    <!--默认的情况下-->
+    <item>
+        <shape>
+            <solid android:color="@color/subscribe_item_normal_bg" />
+        </shape>
+    </item>
+</selector>

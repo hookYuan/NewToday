@@ -1,0 +1,53 @@
+h3{
+	margin: 10px;
+	size: a3;
+}
+
+.title2{
+	float: left;
+}
+
+.title3{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#img_head{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;	
+	float: left;
+}
+
+#title{
+	size: a4;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#time{
+	size: a5;
+	margin-left: 0dp;
+	margin-top: 0px;
+}
+button{
+	float: right;
+	margin-right: 10px;
+	background: ;
+	width: 100px;
+	height: 30px;
+}
+#content{
+	size: a4;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: justify;
+	float: none;
+}
+#img_content{
+	margin: 10px;
+	width: -webkit-fill-available;
+}

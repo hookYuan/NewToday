@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp" ></corners>
+    <gradient
+        android:endColor="@color/white" android:startColor="@color/white"></gradient>
+    <stroke android:color="@color/account_account_bind"
+        android:width="1px"></stroke>
+</shape>

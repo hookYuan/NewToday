@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="城镇医疗保险和农村合作医疗的区别是什么"
+        android:textColor="@color/comment_dlg_text"
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/iv_content_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/small_image_holder_listpage"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_organization"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ring_android_toast_press"/>
+        <TextView
+            android:id="@+id/tv_mechanism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/detail_digg_hint"
+            android:textSize="12sp"
+            android:text="南江检查"/>
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/detail_digg_hint"
+            android:textSize="12sp"
+            android:text="18条评论"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/detail_digg_hint"
+            android:textSize="12sp"
+            android:text="1小时前"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/ss_comment_digg_text_highlight"
+            android:textSize="12sp"
+            android:text="热"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_cicle"/>
+
+    </LinearLayout>
+</LinearLayout>

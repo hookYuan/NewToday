@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="今日头条推荐y引擎有8条更新"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/left_drawer_offline_line"
+        android:background="@color/offline_text"/>
+    <TextView
+        android:id="@+id/tv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="刷新"/>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/profile_friend_item_subscribe_bg_normal"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            style="@style/CustomTabLayout"
+            android:id="@+id/tl_tabLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:tabMode="fixed"
+            app:tabMinWidth="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/detail_more_cancel_btn_bg_pressed"
+            app:tabSelectedTextColor="@android:color/holo_red_light"
+            app:tabTextColor="@android:color/black">
+        </android.support.design.widget.TabLayout>
+      <!--  <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_gradient"/>-->
+        <ImageView
+            android:id="@+id/tv_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/detail_search_icon"
+            android:padding="15dp"
+            android:background="@color/detail_more_cancel_btn_bg_pressed"
+            android:gravity="center"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
